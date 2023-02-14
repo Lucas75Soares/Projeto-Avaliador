@@ -1,0 +1,12 @@
+:root{
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(32, 32, 32);
+    --bg-color: rgb(22, 22, 22);
+    --text-color: white;
+    --text-color2: rgb(99, 99, 99);
+    --btn-color: rgb(12, 103, 178);
+    --btn-color-2: rgb(15, 57, 105);
+    --pyro-color: rgb(217, 19, 5);
+    --xingqiu-color: rgb(69, 121, 150);
+    --hydro-color: rgb(1, 229, 255);
+}

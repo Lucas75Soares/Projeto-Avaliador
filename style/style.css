@@ -1,0 +1,302 @@
+
+
+body {
+    background-color: var(--bg-color);
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Carter One', 'Inter', Arial;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Fonts */
+p {
+    font-family: 'Inter';
+}
+
+a {
+    font-family: 'Inter';
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Inter';
+}
+
+
+
+
+/* Header Style */
+
+.logo-genshin {
+    max-width: 325px;
+    max-height: 125px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-header {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.btn-header a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.btn-header li {
+    padding: 16px 64px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+/* Buttons Header decoration */
+
+.btn-home {
+    background-color: var(--btn-color);
+
+}
+
+.btn-outros {
+    background-color: var(--btn-color-2);
+
+}
+
+/* Main Style */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+
+}
+
+.container-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Container Texto */
+
+.container-first {
+    padding: 32px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-first h2 {
+    color: var(--text-color);
+}
+
+.container-first p {
+    color: var(--text-color2);
+    max-width: 350px;
+}
+
+.btn-ver-mais {
+    background-color: var(--btn-color-2);
+    padding: 15px 35px;
+    border-radius: 15px;
+    color: var(--text-color);
+    font-size: small;
+    text-align: end;
+    float: right;
+    margin-top: 40px;
+}
+
+/*container photo HuTao*/
+
+.container-second img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Container Background H1*/
+
+.container-third {
+    background-image: url("../images/background.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container-third h1 {
+    color: var(--text-color);
+    height: max-content;
+}
+
+/*Container List*/
+
+.container-fourth li {
+    list-style: none;
+    display: flex;
+
+}
+
+.images-fourth-container {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.container-fourth {
+    padding: 0px;
+    margin: 12px;
+
+}
+
+.container-fourth h2 {
+    font-size: small;
+}
+
+.container-fourth li {
+    display: flex;
+    gap: 15px;
+    max-width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+.pyro {
+    background-color: black;
+
+}
+
+.pyro h2 {
+    color: var(--pyro-color);
+}
+
+.pyro p {
+    color: var(--text-color2);
+}
+
+.xingqiu h2 {
+    color: var(--xingqiu-color);
+}
+
+.xingqiu p {
+    color: var(--text-color2);
+}
+
+.hydro {
+    background-color: black;
+}
+
+.hydro h2 {
+    color: var(--hydro-color);
+}
+
+.hydro p {
+    color: var(--text-color2);
+}
+
+/*Footer*/
+
+footer {
+    color: var(--text-color2);
+    opacity: 0.2;
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Inter';
+}
+
+/*Hovers*/
+
+a:hover {
+    scale: 1.1;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.hutao-photo:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.container-fourth li:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.5s;
+
+}
+
+h1:hover {
+    color: var(--pyro-color);
+    transition: 1s;
+}
+
+.new-character:hover {
+    color: var(--pyro-color);
+    transition: 1s;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width:600px) {
+
+
+    header {
+        align-items: center;
+    }
+
+    .btn-header {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .container-first {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-principal {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        max-width: 600px;
+    }
+
+    .container-fourth li {
+        max-width: 600px;
+    
+    }
+
+    .btn-ver-mais {
+        float: left
+    }
+
+    .container-third {
+        padding:5px;
+
+    }
+
+    .container-second {
+        max-width: 600px;
+        margin-top: 15px;
+    }
+}
